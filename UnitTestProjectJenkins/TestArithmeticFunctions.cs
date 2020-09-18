@@ -10,13 +10,13 @@ namespace MSUnitTests
         [TestMethod]
         public void TestAddFunktion()
         {
-            Assert.AreEqual(Program.Add(10, 10), 20);
+            Model.InputNumberOne = 10;
+            Model.InputNumberTwo = 10;
+            Model.InputOperator = "+";
+            Controller.Calculate();
+            Assert.AreEqual(Model.Output, 20);
         }
 
-        [TestMethod]
-        public void TestSubstractFunktion()
-        {
-            Assert.AreEqual(Program.Substract(10, 10), 0);
-        }
+        
     }
 }

@@ -10,17 +10,11 @@ namespace BreakMe
     {
         static void Main(string[] args)
         {
-            
+            var view = new View();
+            var calculate = new Controller();
+            view.ShowOutput();
         }
 
-        public static double Add(double a, double b)
-        {
-            return a + b;
-        }
-
-        public static double Substract(double a , double b)
-        {
-            return a - b;
-        }
+        
     }
 }
