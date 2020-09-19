@@ -39,13 +39,13 @@ namespace BreakMe
             switch (InputOperator)
             {
                 case "+":
-                    return Add(InputNumberOne, InputNumberTwo);
+                    return Output = Add(InputNumberOne, InputNumberTwo);
                 case "-":
-                    return Substract(InputNumberOne, InputNumberTwo);
+                    return Output = Substract(InputNumberOne, InputNumberTwo);
                 case "*":
-                    return Multiply(InputNumberOne, InputNumberTwo);
+                    return Output = Multiply(InputNumberOne, InputNumberTwo);
                 case "/":
-                    return Divide(InputNumberOne, InputNumberTwo);
+                    return Output = Divide(InputNumberOne, InputNumberTwo);
                 default:
                     return 0;
             }

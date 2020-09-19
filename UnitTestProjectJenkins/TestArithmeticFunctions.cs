@@ -14,7 +14,7 @@ namespace MSUnitTests
             Model.InputNumberTwo = 10;
             Model.InputOperator = "+";
             Controller.Calculate();
-            Assert.AreEqual(Model.Output, 20);
+            Assert.AreEqual(20, Model.Output);
         }
 
         

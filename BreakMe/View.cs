@@ -10,34 +10,40 @@ namespace BreakMe
     {
         public View()
         {
+            Console.WriteLine("Input first number:");
             AskForNumberInput(true);
+            Console.WriteLine("Input operand:");
             AskForOperationInput();
+            Console.WriteLine("Input second number:");
             AskForNumberInput(false);
         }
+
         public static double AskForNumberInput(bool firstNumber)
         {
-            double value = 0;
-            while (double.TryParse(Console.ReadLine(), out value))
+            string input;
+            double value;
+            do
             {
-                break;
-            }
-            if (firstNumber) return InputNumberOne;
-            else return InputNumberTwo;
+                input = Console.ReadLine();   
+            } while (!double.TryParse(input, out value));  
+           
+            if (firstNumber) return InputNumberOne = value;
+            else return InputNumberTwo = value;
         }
 
         public static string AskForOperationInput()
         {
-            string operation = "0";
-            while (operation != "+" && operation != "-" && operation != "/" && operation != "*")
+            string operation = "";
+            do
             {
-                operation = Console.ReadLine();                
-            }
-            return InputOperator;
+                operation = Console.ReadLine();
+            } while (operation != "+" && operation != "-" && operation != "/" && operation != "*");
+            return InputOperator = operation;
         }
 
-        public void ShowOutput()
+        public static void ShowOutput()
         {
-            Console.WriteLine(Output);
+            Console.WriteLine(InputNumberOne + InputOperator + InputNumberTwo + "=" + Output);
         }
     }
 }

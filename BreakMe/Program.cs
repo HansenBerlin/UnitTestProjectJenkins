@@ -12,7 +12,8 @@ namespace BreakMe
         {
             var view = new View();
             var calculate = new Controller();
-            view.ShowOutput();
+            View.ShowOutput();
+            Console.ReadKey();
         }
 
         

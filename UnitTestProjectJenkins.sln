@@ -10,6 +10,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSUnitTests", "UnitTestProj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BreakMe", "BreakMe\BreakMe.csproj", "{588CEE62-B2AB-4EC4-8E29-B4315C45DA60}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XUnitsTests", "XUnitsTests\XUnitsTests.csproj", "{08B307BA-11A5-45B8-A383-9097FA9B00F6}"
+	ProjectSection(ProjectDependencies) = postProject
+		{588CEE62-B2AB-4EC4-8E29-B4315C45DA60} = {588CEE62-B2AB-4EC4-8E29-B4315C45DA60}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,6 +29,10 @@ Global
 		{588CEE62-B2AB-4EC4-8E29-B4315C45DA60}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{588CEE62-B2AB-4EC4-8E29-B4315C45DA60}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{588CEE62-B2AB-4EC4-8E29-B4315C45DA60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08B307BA-11A5-45B8-A383-9097FA9B00F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08B307BA-11A5-45B8-A383-9097FA9B00F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08B307BA-11A5-45B8-A383-9097FA9B00F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08B307BA-11A5-45B8-A383-9097FA9B00F6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
