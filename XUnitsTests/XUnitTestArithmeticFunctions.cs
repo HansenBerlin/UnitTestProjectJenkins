@@ -18,5 +18,32 @@ namespace XUnitsTests
             Model.InputOperator = "+";
             Assert.Equal(20, Controller.Calculate());
         }
+
+        [Fact]
+        public void TestSubstractFunktion()
+        {
+            Model.InputNumberOne = 10;
+            Model.InputNumberTwo = 10;
+            Model.InputOperator = "-";
+            Assert.Equal(0, Controller.Calculate());
+        }
+
+        [Fact]
+        public void TestMultiplyFunktion()
+        {
+            Model.InputNumberOne = 10;
+            Model.InputNumberTwo = 10;
+            Model.InputOperator = "*";
+            Assert.Equal(100, Controller.Calculate());
+        }
+
+        [Fact]
+        public void TestDivideFunktion()
+        {
+            Model.InputNumberOne = 10;
+            Model.InputNumberTwo = 10;
+            Model.InputOperator = "/";
+            Assert.Equal(1, Controller.Calculate());
+        }
     }
 }
