@@ -13,6 +13,8 @@ namespace BreakMe
             var view = new View();
             var calculate = new Controller();
             View.ShowOutput();
+
+            Console.WriteLine("Test push to master branch");
            
 
 
