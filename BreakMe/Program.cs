@@ -11,7 +11,7 @@ namespace BreakMe
         static void Main(string[] args)
         {
             var view = new View();
-            var calculate = new Controller();
+            var calculate = new Controller()
             View.ShowOutput();
            
 
