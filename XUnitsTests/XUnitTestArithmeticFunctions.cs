@@ -15,7 +15,7 @@ namespace XUnitsTests
         {
             Model.InputNumberOne = 10;
             Model.InputNumberTwo = 10;
-            Model.InputOperator = "+";
+            Model.InputOperator = "-";
             Assert.Equal(20, Controller.Calculate());
         }
 
