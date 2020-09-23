@@ -14,7 +14,7 @@ namespace BreakMe
             var calculate = new Controller();
             View.ShowOutput();
 
-            Console.WriteLine("Test push to  branch");
+            Console.WriteLine("Test push to  branch")
 
 
 
