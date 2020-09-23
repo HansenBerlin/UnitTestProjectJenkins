@@ -15,7 +15,6 @@ namespace BreakMe
             View.ShowOutput();
 
             Console.WriteLine("Test push to master branch");
-            Console.WriteLine("Test push to master branch");
 
 
 
